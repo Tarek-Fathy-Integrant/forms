@@ -13,7 +13,7 @@ class NewBoxForm extends Component {
     }
     handleSubmit(evt) {
         evt.preventDefault();
-        this.props.addBox()
+        this.props.addBox(this.state);
     }
     handleChange(){
 
