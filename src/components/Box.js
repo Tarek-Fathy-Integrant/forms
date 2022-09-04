@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Box.css'
 
 class Box extends Component {
     constructor(props) {
@@ -10,13 +11,14 @@ class Box extends Component {
     }
     render() {
         const boxStyle = {
-            height: this.props.height,
-            width: this.props.width,
+            height: `${this.props.height}rem`,
+            width: `${this.props.width}rem`,
             backgroundColor: this.props.color
         }
         return (
-            <div>
-                <div style={boxStyle}></div>
+            <div className='Box'>
+                <div style={boxStyle}>
+                </div>
                 <button onClick={this.handleClick}>Delete Box</button>
             </div>
         );
